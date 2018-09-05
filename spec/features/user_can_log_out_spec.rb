@@ -13,7 +13,6 @@ describe 'logged in user can log out' do
       fill_in :password, with: "test"
 
       click_on "Log In"
-      expect(page).to have_content("I already have an account")
       click_on "Log Out"
 
       expect(current_path).to eq(root_path)
