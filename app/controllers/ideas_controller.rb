@@ -1,6 +1,6 @@
 class IdeasController < ApplicationController
 
-  before_action :find_user, only: [:index, :new, :create, :show]
+  before_action :find_user
 
   def index
     @user = User.find(params[:user_id])
@@ -18,6 +18,11 @@ class IdeasController < ApplicationController
 
   def show
     @idea = Idea.find(params[:id])
+  end
+
+  def destroy
+    Idea.destroy(params[:id])
+    redirect_to user_ideas_path(@user)
   end
 
   private
