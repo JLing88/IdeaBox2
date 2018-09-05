@@ -5,11 +5,11 @@
   </p>
   <p>
     <%= f.label :body %>
-    <%= f.text_field :body %>
+    <%= f.text_area :body %>
   </p>
   <p>
     <%= f.label :category_id %>
-    <%= f.collection_select(:category_id, Category.all, :id, :title) %>
+    <%= f.collection_select(:category_id, Category.all, :id, :title, {:selected => "Please select"}) %>
   </p>
   <%= f.submit %>
 <% end %>

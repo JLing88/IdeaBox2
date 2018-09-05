@@ -45,7 +45,6 @@
         1,
         1,
         1,
-        1,
         null,
         1,
         1,
@@ -109,6 +108,30 @@
       "/Users/jling/turing/2module/projects/IdeaBox2/spec/features/user_can_see_all_ideas_spec.rb": [
         1
       ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/spec/models/category_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/models/category.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
       "/Users/jling/turing/2module/projects/IdeaBox2/spec/models/idea_spec.rb": [
         1,
         null,
@@ -126,11 +149,6 @@
       "/Users/jling/turing/2module/projects/IdeaBox2/app/models/idea.rb": [
         1,
         1,
-        1,
-        1,
-        null
-      ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/models/application_record.rb": [
         1,
         1,
         null
@@ -176,11 +194,6 @@
         1,
         null
       ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/models/category.rb": [
-        1,
-        null,
-        null
-      ],
       "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/ideas_controller.rb": [
         1,
         null,
@@ -202,7 +215,6 @@
         null,
         null,
         1,
-        4,
         null,
         null,
         1,
@@ -300,6 +312,6 @@
         null
       ]
     },
-    "timestamp": 1536119471
+    "timestamp": 1536121330
   }
 }
