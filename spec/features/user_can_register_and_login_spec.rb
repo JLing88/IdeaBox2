@@ -15,9 +15,10 @@ describe 'registration and login' do
       fill_in :user_password, with: "test"
 
       click_on "Create User"
+      user = User.last
+      expect(current_path).to eq(user_ideas_path(user))
+      expect(page).to have_content("All Ideas for #{username}")
 
-      expect(page).to have_contect("Welcome, #{username}")
-      
     end
   end
 end

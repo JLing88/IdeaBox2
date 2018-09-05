@@ -1,0 +1,9 @@
+<h1>All Ideas for <%= @user.username %></h1>
+
+
+<% @ideas.each do |idea| %>
+<ul>
+  <li><%= idea.title %></p>
+  <li><%= idea.body %></p>
+</ul>
+<% end %>
