@@ -1,0 +1,15 @@
+<%= form_for [@user, @idea] do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :body %>
+    <%= f.text_field :body %>
+  </p>
+  <p>
+    <%= f.label :category_id %>
+    <%= f.collection_select(:category_id, Category.all, :id, :title) %>
+  </p>
+  <%= f.submit %>
+<% end %>
