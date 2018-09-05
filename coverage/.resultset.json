@@ -94,20 +94,9 @@
         1,
         null
       ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/sessions_controller.rb": [
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/welcome_controller.rb": [
         1,
         1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        0,
-        null,
-        null,
         null,
         null
       ],
@@ -118,25 +107,11 @@
         1,
         null,
         1,
-        5,
+        6,
         null,
         null,
         1,
         0,
-        null,
-        null
-      ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/ideas_controller.rb": [
-        1,
-        1,
-        2,
-        2,
-        null,
-        null
-      ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/welcome_controller.rb": [
-        1,
-        1,
         null,
         null
       ],
@@ -162,8 +137,38 @@
         1,
         null,
         null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/ideas_controller.rb": [
+        1,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/sessions_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1536114408
+    "timestamp": 1536114903
   }
 }
