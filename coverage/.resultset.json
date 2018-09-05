@@ -1,6 +1,33 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jling/turing/2module/projects/IdeaBox2/spec/features/admin_can_delete_category_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/jling/turing/2module/projects/IdeaBox2/spec/features/user_can_create_an_idea_spec.rb": [
         1,
         null,
@@ -238,7 +265,42 @@
         null,
         null,
         1,
-        2,
+        4,
+        null,
+        null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
+        4,
+        4,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
         null,
         null
       ],
@@ -351,24 +413,8 @@
         null,
         null,
         null
-      ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        2,
-        2,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null
       ]
     },
-    "timestamp": 1536179191
+    "timestamp": 1536180504
   }
 }
