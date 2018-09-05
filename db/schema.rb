@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180905020345) do
+ActiveRecord::Schema.define(version: 20180905202956) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,6 +19,15 @@ ActiveRecord::Schema.define(version: 20180905020345) do
     t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "idea_images", force: :cascade do |t|
+    t.bigint "image_id"
+    t.bigint "idea_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["idea_id"], name: "index_idea_images_on_idea_id"
+    t.index ["image_id"], name: "index_idea_images_on_image_id"
   end
 
   create_table "ideas", force: :cascade do |t|
@@ -32,14 +41,22 @@ ActiveRecord::Schema.define(version: 20180905020345) do
     t.index ["user_id"], name: "index_ideas_on_user_id"
   end
 
-  create_table "users", force: :cascade do |t|
-    t.string "username"
-    t.string "password_digest"
-    t.integer "role"
+  create_table "images", force: :cascade do |t|
+    t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+    t.integer "role", default: 0
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_foreign_key "idea_images", "ideas"
+  add_foreign_key "idea_images", "images"
   add_foreign_key "ideas", "categories"
   add_foreign_key "ideas", "users"
 end

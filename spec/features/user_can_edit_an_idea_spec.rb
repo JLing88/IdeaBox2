@@ -16,7 +16,6 @@ describe 'user can edit an idea' do
         expect(current_path).to eq(edit_user_idea_path(user, idea_1))
         fill_in :idea_title, with: "Updated Title"
         fill_in :idea_body, with: "Updated Body"
-        save_and_open_page
         click_on "Update Idea"
 
         expect(current_path).to eq(user_idea_path(user, idea_1))

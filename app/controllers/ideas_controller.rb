@@ -4,8 +4,12 @@ class IdeasController < ApplicationController
   before_action :find_idea, only: [:show, :update, :edit]
 
   def index
-    @user = User.find(params[:user_id])
-    @ideas = Idea.where(user_id: @user.id)
+    if current_user
+
+      @ideas = Idea.where(user_id: @user.id)
+    else
+      redirect_to 'public/404.html'
+    end
   end
 
   def new
@@ -14,11 +18,14 @@ class IdeasController < ApplicationController
 
   def create
     @idea = @user.ideas.create(idea_params)
-    redirect_to user_idea_path(@user, @idea)
+    if @idea.save
+      redirect_to user_idea_path(@user, @idea)
+    else
+      render :new
+    end
   end
 
   def show
-    @idea = Idea.find(params[:id])
   end
 
   def destroy
@@ -37,7 +44,7 @@ class IdeasController < ApplicationController
   private
 
   def idea_params
-    params.require(:idea).permit(:title, :body)
+    params.require(:idea).permit(:title, :body, :category_id)
   end
 
   def find_idea
