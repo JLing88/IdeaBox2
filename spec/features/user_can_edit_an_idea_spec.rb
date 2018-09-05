@@ -1,11 +1,12 @@
 require 'rails_helper'
 
-describe 'user can edit and idea' do
+describe 'user can edit an idea' do
   context 'they visit the show page' do
     context 'they click on Edit and fill in the form' do
       it 'shows the updated idea' do
         user = User.create(username: "Jesse", password: "test")
         category = Category.create(title: "Category 1")
+        category = Category.create(title: "Category 2")
         idea_1 = user.ideas.create(title: "Title 1", body: "Body 1", category_id: category.id)
 
         visit user_idea_path(user, idea_1)
@@ -15,6 +16,7 @@ describe 'user can edit and idea' do
         expect(current_path).to eq(edit_user_idea_path(user, idea_1))
         fill_in :idea_title, with: "Updated Title"
         fill_in :idea_body, with: "Updated Body"
+        save_and_open_page
         click_on "Update Idea"
 
         expect(current_path).to eq(user_idea_path(user, idea_1))
