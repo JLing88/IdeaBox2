@@ -14,7 +14,8 @@ describe 'logged in user can log out' do
 
       click_on "Log In"
       click_on "Log Out"
-
+      expect(page).to have_content("I already have an account")
+      expect(page).to_not have_content("Log Out")
       expect(current_path).to eq(root_path)
       expect(@current_user).to eq(nil)
     end
