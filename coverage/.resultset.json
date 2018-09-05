@@ -191,6 +191,29 @@
         1,
         null
       ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/spec/models/idea_image_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/models/idea_image.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/jling/turing/2module/projects/IdeaBox2/spec/models/idea_spec.rb": [
         1,
         null,
@@ -202,11 +225,36 @@
         null,
         1,
         2,
+        2,
+        2,
         null,
         null
       ],
       "/Users/jling/turing/2module/projects/IdeaBox2/app/models/idea.rb": [
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/spec/models/image_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/models/image.rb": [
         1,
         1,
         1,
@@ -269,41 +317,6 @@
         null,
         null
       ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/admin/categories_controller.rb": [
-        1,
-        1,
-        4,
-        4,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        1,
-        null,
-        null
-      ],
       "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/ideas_controller.rb": [
         1,
         null,
@@ -363,19 +376,25 @@
         null,
         null
       ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/welcome_controller.rb": [
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/admin/categories_controller.rb": [
         1,
         1,
+        4,
+        4,
         null,
-        null
-      ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/users_controller.rb": [
-        1,
-        1,
-        1,
+        0,
+        null,
         null,
         null,
         1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
         1,
         1,
         1,
@@ -413,8 +432,37 @@
         null,
         null,
         null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/welcome_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/users_controller.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1536180504
+    "timestamp": 1536181645
   }
 }
