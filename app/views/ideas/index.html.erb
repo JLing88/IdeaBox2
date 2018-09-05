@@ -1,5 +1,6 @@
 <h1>All Ideas for <%= @user.username %></h1>
 
+<%= link_to "Create an Idea", new_user_idea_path(@user)%>
 
 <% @ideas.each do |idea| %>
 <ul>
