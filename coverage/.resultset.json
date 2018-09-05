@@ -1,6 +1,36 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jling/turing/2module/projects/IdeaBox2/spec/features/user_can_create_an_idea_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/jling/turing/2module/projects/IdeaBox2/spec/features/user_can_delete_an_idea_spec.rb": [
         1,
         null,
@@ -9,6 +39,8 @@
         1,
         1,
         1,
+        1,
+        null,
         1,
         1,
         1,
@@ -151,6 +183,7 @@
         1,
         1,
         1,
+        1,
         null
       ],
       "/Users/jling/turing/2module/projects/IdeaBox2/spec/models/user_spec.rb": [
@@ -194,6 +227,21 @@
         1,
         null
       ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        11,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
       "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/ideas_controller.rb": [
         1,
         null,
@@ -202,8 +250,12 @@
         null,
         1,
         4,
+        null,
         4,
         null,
+        0,
+        null,
+        null,
         null,
         1,
         1,
@@ -212,6 +264,10 @@
         1,
         1,
         1,
+        1,
+        null,
+        0,
+        null,
         null,
         null,
         1,
@@ -242,21 +298,6 @@
         null,
         1,
         13,
-        null,
-        null
-      ],
-      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/application_controller.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        14,
-        null,
-        null,
-        1,
-        0,
         null,
         null
       ],
@@ -310,8 +351,24 @@
         null,
         null,
         null
+      ],
+      "/Users/jling/turing/2module/projects/IdeaBox2/app/controllers/admin/categories_controller.rb": [
+        1,
+        1,
+        2,
+        2,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1536121330
+    "timestamp": 1536179191
   }
 }

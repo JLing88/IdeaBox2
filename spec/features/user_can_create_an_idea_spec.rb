@@ -5,19 +5,20 @@ describe 'As a logged in user' do
     context "they click on Create an Idea and fill in the form" do
       it 'should show the new idea' do
         user = User.create(username: "Jesse", password: "test")
+        category = Category.create(title: "Category")
+        allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
 
         visit user_ideas_path(user)
 
         click_on "Create an Idea"
 
         expect(current_path).to eq(new_user_idea_path(user))
-
         fill_in :idea_title, with: "New Title"
         fill_in :idea_body, with: "New Body"
+        select "Category", from: "idea[category_id]"
         click_on "Create Idea"
 
         idea = Idea.last
-
         expect(current_path).to eq(user_idea_path(user, idea))
         expect(page).to have_content("New Title")
         expect(page).to have_content("New Body")
