@@ -1,0 +1,10 @@
+<h1>Admin Images</h1>
+
+<h4> <%= link_to "Create New Image", new_admin_image_path %></h4>
+
+<% @images.each do |image| %>
+<ul>
+  <li> <%= image.title %></li>
+  <li> <%= image_tag "#{image.url}" %></li>
+</ul>
+<% end %>

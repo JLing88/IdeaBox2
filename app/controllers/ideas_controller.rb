@@ -37,7 +37,7 @@ class IdeasController < ApplicationController
   end
 
   def update
-    Idea.update(idea_params)
+    @idea.update(idea_params)
     redirect_to user_idea_path(@user, @idea)
   end
 

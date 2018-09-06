@@ -1,0 +1,9 @@
+<h1>Create New Image</h1>
+
+<%= form_for [current_user.role, @image] do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :url %>
+  <%= f.text_field :url%>
+  <%= f.submit %>
+<% end %>

@@ -3,18 +3,20 @@
   <head>
     <title>IdeaBox2</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Chango|Concert+One" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
 
   <body class="bg">
     <% unless current_user %>
+    <nav>
       <p><%= link_to "Sign Up", new_user_path %></p>
       <p><%= link_to "I already have an account", login_path%>
     <% else %>
       <p> <%= link_to "Log Out", logout_path %>
     <% end %>
+  </nav>
     <%= yield %>
   </body>
 </html>
