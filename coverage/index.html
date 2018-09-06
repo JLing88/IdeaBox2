@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-05T18:00:25-06:00">2018-09-05T18:00:25-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-09-05T20:43:07-06:00">2018-09-05T20:43:07-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.5%</span></span>
+    (<span class="covered_percent"><span class="green">97.05%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.2
+         1.19
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>26</b> files in total.
-    <b>280</b> relevant lines. 
-    <span class="green"><b>273</b> lines covered</span> and
-    <span class="red"><b>7</b> lines missed </span>
+    <b>28</b> files in total.
+    <b>305</b> relevant lines. 
+    <span class="green"><b>296</b> lines covered</span> and
+    <span class="red"><b>9</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -81,13 +81,23 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#ac014ed3875ab16393fb2e6c50471dbbfde59132" class="src_link" title="app/controllers/idea_images_controller.rb">app/controllers/idea_images_controller.rb</a></td>
+        <td class="red strong">75.0 %</td>
+        <td>12</td>
+        <td>8</td>
+        <td>6</td>
+        <td>2</td>
+        <td>1.1</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#602f8131f0a0cdb74f7e9a61f52964a719dc0cfa" class="src_link" title="app/controllers/ideas_controller.rb">app/controllers/ideas_controller.rb</a></td>
         <td class="green strong">93.1 %</td>
         <td>57</td>
         <td>29</td>
         <td>27</td>
         <td>2</td>
-        <td>1.8</td>
+        <td>1.9</td>
       </tr>
       
       <tr>
@@ -183,9 +193,9 @@
       <tr>
         <td class="strong"><a href="#9f67011bc6a8353c52cc1718aa8ac875cf723a73" class="src_link" title="spec/features/admin_can_create_new_image_spec.rb">spec/features/admin_can_create_new_image_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>25</td>
-        <td>16</td>
-        <td>16</td>
+        <td>23</td>
+        <td>15</td>
+        <td>15</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -196,6 +206,16 @@
         <td>25</td>
         <td>15</td>
         <td>15</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#4827f17da620705ee415714f744366ea74551471" class="src_link" title="spec/features/user_can_add_image_to_idea_spec.rb">spec/features/user_can_add_image_to_idea_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>27</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -803,6 +823,97 @@
 </div>
 
       
+        <div class="source_table" id="ac014ed3875ab16393fb2e6c50471dbbfde59132">
+  <div class="header">
+    <h3>app/controllers/idea_images_controller.rb</h3>
+    <h4><span class="red">75.0 %</span> covered</h4>
+    <div>
+      <b>8</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class IdeaImagesController &lt; ApplicationController</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="3">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @idea_image = IdeaImage.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @images = Image.all</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="5">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
+          <code class="ruby">  def create</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">    IdeaImage.create(idea_image_params)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="10">
+          
+          
+          <code class="ruby">    redirect_to user_idea_path(current_user, idea)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
         <div class="source_table" id="602f8131f0a0cdb74f7e9a61f52964a719dc0cfa">
   <div class="header">
     <h3>app/controllers/ideas_controller.rb</h3>
@@ -853,8 +964,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="7">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="7">
+          <span class="hits">5</span>
           
           <code class="ruby">    if current_user</code>
         </li>
@@ -865,8 +976,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="9">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="9">
+          <span class="hits">5</span>
           
           <code class="ruby">      @ideas = Idea.where(user_id: @user.id)</code>
         </li>
@@ -1054,7 +1165,7 @@
         <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
-          <code class="ruby">    Idea.update(idea_params)</code>
+          <code class="ruby">    @idea.update(idea_params)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="41">
@@ -1117,8 +1228,8 @@
           <code class="ruby">  def find_idea</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="51">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="51">
+          <span class="hits">7</span>
           
           <code class="ruby">    @idea = Idea.find(params[:id])</code>
         </li>
@@ -1141,8 +1252,8 @@
           <code class="ruby">  def find_user</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="55">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="15" data-linenumber="55">
+          <span class="hits">15</span>
           
           <code class="ruby">    @user = User.find(params[:user_id])</code>
         </li>
@@ -1820,8 +1931,8 @@
     <h3>spec/features/admin_can_create_new_image_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>16</b> relevant lines. 
-      <span class="green"><b>16</b> lines covered</span> and
+      <b>15</b> relevant lines. 
+      <span class="green"><b>15</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1943,37 +2054,25 @@
           <code class="ruby">        expect(page).to have_content(&quot;Beach&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
-          <span class="hits">1</span>
-          
-          <code class="ruby">        save_and_open_page</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby">end</code>
@@ -2143,6 +2242,187 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4827f17da620705ee415714f744366ea74551471">
+  <div class="header">
+    <h3>spec/features/user_can_add_image_to_idea_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;As a user&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  context &#39;they link from the idea show page&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    context &quot;they click Add Image and select an image&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      it &quot;shows the added image on the idea show page&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        user = User.create(username: &quot;Jesse&quot;, password: &quot;test&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        category = Category.create(title: &quot;Category&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        idea_1 = user.ideas.create(title: &quot;Title 1&quot;, body: &quot;Body 1&quot;, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        idea_2 = user.ideas.create(title: &quot;Title 2&quot;, body: &quot;Body 2&quot;, category_id: category.id)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        image = Image.create!(title: &quot;Beach&quot;, url: &quot;https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        visit user_ideas_path(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        click_on &quot;Title 1&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(current_path).to eq(user_idea_path(user, idea_1))</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        click_on &quot;Add Image&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        within(&quot;#image-#{image.id}&quot;) do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">          click_link</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        expect(current_path).to eq(user_idea_path(user, idea_1))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">      end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
           
           
           <code class="ruby">end</code>

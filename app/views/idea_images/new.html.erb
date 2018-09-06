@@ -1,0 +1,9 @@
+<h1>Select Image</h1>
+
+<% @images.each do |image| %>
+  <ul>
+    <a>
+      <li id="image-<%= image.id %>"><%= link_to image_tag(image.url), method: :post %></li>
+    </a>
+  </ul>
+<% end %>

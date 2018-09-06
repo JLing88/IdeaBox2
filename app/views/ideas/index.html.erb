@@ -6,5 +6,10 @@
 <ul>
   <h3><%= link_to idea.title, user_idea_path(@user, idea) %></h3>
   <p><%= idea.body %></p>
+  <div>
+    <% idea.images.each do |image| %>
+    <%= image_tag("#{image.url}") %>
+    <% end %>
+  </div>
 </ul>
 <% end %>

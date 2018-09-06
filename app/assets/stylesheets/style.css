@@ -7,3 +7,12 @@ body {
 h1 {
   font-family: 'Chango', cursive;
 }
+
+nav {
+  align: right;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}

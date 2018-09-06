@@ -17,8 +17,6 @@ describe 'As an admin' do
 
         expect(current_path).to eq(admin_images_path)
         expect(page).to have_content("Beach")
-        save_and_open_page
-
       end
     end
   end
