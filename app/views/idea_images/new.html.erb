@@ -1,12 +1,1 @@
 <h1>Select Image</h1>
-
-<% @images.each do |image| %>
-  <ul>
-    <%= form_for [current_user, @idea_image] do |f| %>
-      <li> <%= image_tag(image.url) %></li>
-      <li> <%= f.hidden_field :image_id, @image.id %></li>
-      <li> <%= f.hidden_field :idea_id,  %></li>
-      <li> <%= f.submit "Select" %> </li>
-    <% end %>
-  </ul>
-<% end %>
