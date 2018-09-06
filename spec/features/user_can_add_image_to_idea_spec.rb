@@ -15,12 +15,9 @@ describe "As a user" do
         expect(current_path).to eq(user_idea_path(user, idea_1))
         click_on "Add Image"
 
-        within("#image-#{image.id}") do
-          click_link
-        end
+        click_on "Select"
 
         expect(current_path).to eq(user_idea_path(user, idea_1))
-
       end
     end
   end

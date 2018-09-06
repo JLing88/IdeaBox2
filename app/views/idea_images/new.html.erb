@@ -2,8 +2,11 @@
 
 <% @images.each do |image| %>
   <ul>
-    <a>
-      <li id="image-<%= image.id %>"><%= link_to image_tag(image.url), method: :post %></li>
-    </a>
+    <%= form_for [current_user, @idea_image] do |f| %>
+      <li> <%= image_tag(image.url) %></li>
+      <li> <%= f.hidden_field :image_id, @image.id %></li>
+      <li> <%= f.hidden_field :idea_id,  %></li>
+      <li> <%= f.submit "Select" %> </li>
+    <% end %>
   </ul>
 <% end %>

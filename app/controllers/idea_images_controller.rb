@@ -5,7 +5,6 @@ class IdeaImagesController < ApplicationController
   end
 
   def create
-
     IdeaImage.create(idea_image_params)
     redirect_to user_idea_path(current_user, idea)
   end
